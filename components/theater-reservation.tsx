@@ -148,7 +148,7 @@ export default function TheaterReservation() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold tracking-tight text-primary">TEATRO-UNA</h1>
-                <p className="text-xs text-muted-foreground">Reserva interactiva con sugerencia inteligente</p>
+                <p className="text-xs text-muted-foreground">Reserva interactiva con sugerencia priorizando cercanía al escenario</p>
               </div>
             </div>
             <div className="flex items-center gap-3 md:gap-6 text-sm text-muted-foreground">
@@ -382,7 +382,7 @@ export default function TheaterReservation() {
               </div>
 
               <p className="max-w-xl text-sm leading-7 text-muted-foreground">
-                Plataforma de reserva de asientos con sugerencia inteligente por proximidad al centro,
+                Plataforma de reserva de asientos con sugerencia inteligente por cercanía al escenario,
                 selección visual de espacios y confirmación inmediata de disponibilidad.
               </p>
 

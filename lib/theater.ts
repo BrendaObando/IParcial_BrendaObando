@@ -75,20 +75,7 @@ export function generateRowSearchOrder(numFilas: number): number[] {
     return [];
   }
 
-  const centroSuperior = Math.floor((numFilas - 1) / 2);
-  const centroInferior = Math.ceil((numFilas - 1) / 2);
-  const indices = Array.from({ length: numFilas }, (_, index) => index);
-
-  return indices.sort((a, b) => {
-    const distanciaA = Math.min(Math.abs(a - centroSuperior), Math.abs(a - centroInferior));
-    const distanciaB = Math.min(Math.abs(b - centroSuperior), Math.abs(b - centroInferior));
-
-    if (distanciaA !== distanciaB) {
-      return distanciaA - distanciaB;
-    }
-
-    return a - b;
-  });
+  return Array.from({ length: numFilas }, (_, index) => index);
 }
 
 function buscarMejorGrupoEnFila(fila: Seat[], cantidad: number): number[] | null {
