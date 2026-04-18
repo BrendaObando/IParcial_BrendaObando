@@ -201,7 +201,8 @@ export default function TheaterReservation() {
         <section className="mb-8">
           <div className="mx-auto max-w-4xl rounded-[28px] border border-border/70 bg-card/70 p-6 shadow-[0_24px_60px_-32px_color-mix(in_oklab,var(--primary)_38%,transparent)] backdrop-blur-xl">
             <div className="overflow-x-auto pb-4">
-              <div className="inline-flex flex-col gap-2 min-w-max mx-auto">
+              <div className="flex min-w-full justify-center">
+                <div className="inline-flex flex-col gap-2 min-w-max items-center">
                 {asientos.map((fila, indexFila) => (
                   <div key={indexFila} className="flex items-center gap-2">
                     <span className="w-8 text-right text-sm font-medium text-muted-foreground">
@@ -233,6 +234,7 @@ export default function TheaterReservation() {
                     </span>
                   </div>
                 ))}
+                </div>
               </div>
             </div>
 

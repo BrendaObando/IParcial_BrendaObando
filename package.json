@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "powershell -NoProfile -Command \"$portProcess = Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty OwningProcess; if ($portProcess) { Stop-Process -Id $portProcess -Force -ErrorAction SilentlyContinue }; next dev\"",
     "build": "next build",
     "start": "next start",
     "lint": "eslint ."

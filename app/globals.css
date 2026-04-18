@@ -76,10 +76,10 @@
   --sidebar-accent-foreground: oklch(0.92 0.02 240);
   --sidebar-border: oklch(0.31 0.03 255);
   --sidebar-ring: oklch(0.74 0.14 220);
-  --seat-available: oklch(0.68 0.13 215);
+  --seat-available: oklch(0.64 0.11 210);
   --seat-occupied: oklch(0.6 0.17 20);
   --seat-selected: oklch(0.76 0.16 285);
-  --seat-suggested: oklch(0.76 0.13 225);
+  --seat-suggested: oklch(0.78 0.2 315);
 }
 
 @theme inline {

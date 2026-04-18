@@ -6,7 +6,6 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'TEATRO-UNA | Sistema de Reserva de Asientos',
   description: 'Sistema moderno de reserva de asientos para Teatro-UNA',
-  generator: 'v0.app',
   icons: {
     icon: [
       {
@@ -17,12 +16,8 @@ export const metadata: Metadata = {
         url: '/icon-dark-32x32.png',
         media: '(prefers-color-scheme: dark)',
       },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
     ],
-    apple: '/apple-icon.png',
+    shortcut: '/icon-light-32x32.png',
   },
 }
 
