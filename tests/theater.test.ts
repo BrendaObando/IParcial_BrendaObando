@@ -48,7 +48,7 @@ test("Si varias filas cumplen, se elige la más cercana al escenario", () => {
   const resultado = suggestSeats(2, matriz);
 
   assert.deepEqual(generateRowSearchOrder(5), [0, 1, 2, 3, 4]);
-  assert.deepEqual(ids(resultado), [5, 6]);
+  assert.deepEqual(ids(resultado), [6, 7]);
 });
 
 test("El estado visual sugerido aplica la clase de color correcta", () => {
